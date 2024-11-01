@@ -21,6 +21,7 @@ function openSM() {
   if (window.innerWidth < 600) {
     document.getElementById("sidemenu").style.width = "100%";
     document.getElementById("menubar").style.marginLeft = "100%";
+    setTimeout(closeSM, 1800); // Automatically close after 1.8 seconds
   } else if (window.innerWidth < 900) {
     document.getElementById("sidemenu").style.width = "30%";
     document.getElementById("menubar").style.marginLeft = "30%";
